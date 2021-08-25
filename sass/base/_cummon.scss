@@ -9,10 +9,11 @@ h1,
 h2,
 h3,
 p {
+  font-family: var(--main-font-style);
   color: var(--main-text-color);
   margin-top: 0;
   margin-bottom: 0;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 }
 
 ul,

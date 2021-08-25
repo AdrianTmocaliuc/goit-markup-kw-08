@@ -1,7 +1,7 @@
 .social-list {
   display: flex;
   margin: 16px auto 0;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-list__link {
@@ -13,9 +13,6 @@
   border-radius: 50%;
   transition: background-color var(--transition-link-time)
     var(--transition-cubic);
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
   &:hover,
   &:focus {
     background-color: var(--button-text-color);
@@ -23,6 +20,10 @@
       fill: #ffffff;
     }
   }
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
 }
 .social-list__icon {
   fill: var(--icons-color);

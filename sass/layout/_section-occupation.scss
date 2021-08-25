@@ -35,3 +35,9 @@
   line-height: 1.2;
   color: #fff;
 }
+
+@media screen and (max-width: 1200px) {
+  .occupation {
+    display: none;
+  }
+}
