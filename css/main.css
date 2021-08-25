@@ -83,16 +83,6 @@ img {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden !important;
-  }
-  .container {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-  }
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -971,6 +961,10 @@ header {
 @media screen and (min-width: 1200px) {
   .regular-costumer__item {
     flex-basis: calc(100% / 6 - 30px);
+  }
+  .regular-costumer {
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 

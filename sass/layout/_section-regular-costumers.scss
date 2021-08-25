@@ -1,8 +1,6 @@
 .regular-costumer {
   padding-bottom: 60px;
   padding-top: 60px;
-  // padding-bottom: 94px;
-  // padding-top: 94px;
 }
 
 .regular-costumer__list {
@@ -13,10 +11,6 @@
   margin-right: -30px;
   margin-bottom: -30px;
 }
-
-// .regular-costumer__item:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 .regular-costumer__item {
   width: 170px;
@@ -57,5 +51,9 @@
 @media screen and (min-width: 1200px) {
   .regular-costumer__item {
     flex-basis: calc(100% / 6 - 30px);
+  }
+  .regular-costumer {
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
