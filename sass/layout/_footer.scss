@@ -5,11 +5,12 @@
 }
 
 .footer__container {
-  display: flex;
   align-items: baseline;
+  text-align: center;
 }
-.footer__contact:not(:last-child) {
-  margin-right: 70px;
+.footer__contact {
+  display: block;
+  margin-bottom: 60px;
 }
 
 .address-list {
@@ -42,8 +43,8 @@
   text-transform: uppercase;
 }
 
-.footer-form__modify {
-  margin-left: auto;
+.footer__scial {
+  margin-bottom: 60px;
 }
 
 .footer-form__title {
@@ -57,9 +58,9 @@
 
 .footer-farm__email {
   height: 50px;
-  width: 358px;
+  width: 100%;
   padding-left: 10px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -69,5 +70,32 @@
     font-size: 16px;
     line-height: 1.6;
     margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    text-align: left;
+  }
+  .footer__contact:not(:last-child) {
+    margin-right: 70px;
+  }
+  .footer__tablet {
+    margin-bottom: 0px;
+  }
+  .footer-farm__email {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .footer-form__modify {
+    margin-left: auto;
   }
 }
