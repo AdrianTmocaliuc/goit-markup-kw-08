@@ -1,0 +1,73 @@
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+.footer__contact:not(:last-child) {
+  margin-right: 70px;
+}
+
+.address-list {
+  font-style: normal;
+  li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .link {
+    transition: color var(--transition-link-time) var(--transition-cubic);
+    &:hover,
+    &:focus {
+      color: var(--button-text-color);
+    }
+  }
+}
+
+.address-map {
+  color: #fff;
+}
+.address-mail,
+.address-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__social-invition {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.footer-form__modify {
+  margin-left: auto;
+}
+
+.footer-form__title {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.footer-farm__email {
+  height: 50px;
+  width: 358px;
+  padding-left: 10px;
+  margin-right: 12px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-right: 12px;
+  }
+}

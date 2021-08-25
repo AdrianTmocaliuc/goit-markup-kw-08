@@ -1,0 +1,33 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+}
+
+.close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 50%;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.close-btn-icon {
+  transition: fill var(--transition-link-time) var(--transition-cubic);
+  &:hover,
+  &:focus {
+    fill: var(--button-text-color);
+  }
+}
