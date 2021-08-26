@@ -96,3 +96,36 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+  .header-contact {
+    display: none;
+  }
+  .header__container .logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .header__container {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .button__menu-burgher {
+    line-height: 0px;
+    background: none;
+    border: none;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button__menu-burgher {
+    display: none;
+  }
+  .header-contact {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
