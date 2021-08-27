@@ -63,6 +63,10 @@ p {
   letter-spacing: 0.03em;
 }
 
+p {
+  color: var(--second-text-color);
+}
+
 ul,
 ol {
   padding-left: 0;
@@ -109,7 +113,7 @@ img {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 36px;
   align-self: center;
   background-color: var(--button-text-color);
   transition: background-color var(--transition-link-time) var(--transition-cubic);
@@ -126,6 +130,10 @@ img {
   border-radius: 4px;
   padding: 6px 22px;
   box-shadow: none;
+  font-family: var(--main-font-style);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
   transition: background-color var(--transition-link-time) var(--transition-cubic), color var(--transition-link-time) var(--transition-cubic), box-shadow var(--transition-link-time) var(--transition-cubic);
 }
 
@@ -250,6 +258,11 @@ img {
   }
   .mobile-social__list {
     display: flex;
+    flex-wrap: wrap;
+  }
+  .mobile-social__item {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .mobile-social__item:not(:last-child) {
     padding-right: 10px;
@@ -368,6 +381,10 @@ img {
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
   outline: 2px solid #2196f3;
   border: none;
+}
+
+.modal-form-button {
+  padding: 10px 55px;
 }
 
 .modal-form-checkbox-link {
@@ -512,9 +529,17 @@ img {
 .logo {
   display: block;
   color: var(--button-text-color);
-  font-size: 24px;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
   line-height: 1.2;
   font-weight: 700;
+}
+
+.logo__web-footer,
+.logo__web-header {
+  font-family: Oleo Script, sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .header .logo {
@@ -547,6 +572,11 @@ img {
 .footer__contact {
   display: block;
   margin-bottom: 60px;
+  font-family: var(--main-font-style);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
 }
 
 .address-list {
@@ -703,6 +733,10 @@ header {
 
 .header-contact .link {
   color: var(--second-text-color);
+  font-family: var(--main-font-style);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
 }
 
 .header-contact .link:hover, .header-contact .link:focus {
@@ -875,6 +909,10 @@ header {
   align-items: center;
 }
 
+.description__list {
+  margin-bottom: -30px;
+}
+
 .description__list li:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -884,7 +922,6 @@ header {
 }
 
 .description__list p {
-  color: var(--second-text-color);
   font-size: 14px;
   line-height: 1.7;
 }
@@ -918,6 +955,10 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #f5f4fa;
+}
+
+.team__list {
+  margin-top: -30px;
 }
 
 .team__list p {
@@ -990,7 +1031,7 @@ header {
 .section-chard {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -30px;
+  margin-top: -30px;
 }
 
 .section-chard p {
@@ -1000,7 +1041,7 @@ header {
 
 .section-chard__item {
   width: 100%;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .section-chard__title {
@@ -1009,7 +1050,6 @@ header {
   font-size: 18px;
   line-height: 2;
   margin-bottom: 4px;
-  letter-spacing: 6%;
 }
 
 .section-chard__link {
@@ -1042,7 +1082,6 @@ header {
   color: #fff;
   height: 100%;
   width: 100%;
-  font-family: var(--main-font-style);
   font-weight: 400;
   font-style: 18px;
   line-height: 1.6;

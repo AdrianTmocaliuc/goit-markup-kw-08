@@ -16,7 +16,7 @@
 .section-chard {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -30px;
+  margin-top: -30px;
   p {
     font-size: 16px;
     line-height: 1.9;
@@ -25,7 +25,7 @@
 
 .section-chard__item {
   width: 100%;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .section-chard__title {
@@ -34,7 +34,7 @@
   font-size: 18px;
   line-height: 2;
   margin-bottom: 4px;
-  letter-spacing: 6%;
+  // letter-spacing: 0.03em;
 }
 
 .section-chard__link {
@@ -68,7 +68,6 @@
   color: #fff;
   height: 100%;
   width: 100%;
-  font-family: var(--main-font-style);
   font-weight: 400;
   font-style: 18px;
   line-height: 1.6;

@@ -1,9 +1,17 @@
 .logo {
   display: block;
   color: var(--button-text-color);
-  font-size: 24px;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
   line-height: 1.2;
   font-weight: 700;
+}
+
+.logo__web-footer,
+.logo__web-header {
+  font-family: Oleo Script, sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .header .logo {

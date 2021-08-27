@@ -3,12 +3,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  //   .nav__list {
-  //     display: none;
-  //   }
-  //   .header-contact {
-  //     display: none;
-  //   }
   .header__container .logo {
     margin-top: 16px;
     margin-bottom: 16px;
@@ -113,8 +107,11 @@
   }
   .mobile-social__list {
     display: flex;
+    flex-wrap: wrap;
   }
   .mobile-social__item {
+    padding-top: 5px;
+    padding-bottom: 5px;
     &:not(:last-child) {
       padding-right: 10px;
       border-right: 1px solid rgba(33, 33, 33, 0.2);
