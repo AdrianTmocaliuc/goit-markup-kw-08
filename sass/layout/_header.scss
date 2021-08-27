@@ -233,3 +233,9 @@ header {
     margin-left: 50px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    margin-left: auto;
+  }
+}

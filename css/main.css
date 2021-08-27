@@ -747,6 +747,12 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    margin-left: auto;
+  }
+}
+
 .hero {
   margin: 0 auto;
   background-color: #2f303a;
