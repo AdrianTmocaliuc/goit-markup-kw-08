@@ -3,8 +3,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  width: 95vw;
+  max-width: 450px;
+  height: 95vw;
+  max-height: 610px;
+  overflow: auto;
   background-color: #fff;
 }
 
@@ -34,8 +37,8 @@
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    max-height: 581px;
   }
   .modal-form-checkbox-label {
     font-size: 14px;
