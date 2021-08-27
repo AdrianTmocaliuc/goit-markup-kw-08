@@ -136,6 +136,7 @@ header {
     justify-content: space-between;
   }
   .mobile-menu {
+    z-index: 1;
     display: block;
     position: fixed;
     top: 0;
@@ -166,6 +167,7 @@ header {
     padding: 0px;
   }
   .mobile-menu__close-icon {
+    transition: fill var(--transition-link-time) var(--transition-cubic);
     .mobile-menu__close-btn:hover &,
     .mobile-menu__close-btn:focus & {
       fill: var(--button-text-color);
@@ -181,6 +183,11 @@ header {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    transition: color var(--transition-link-time) var(--transition-cubic);
+    &:hover,
+    &:focus {
+      color: var(--button-text-color);
+    }
   }
   .mobile-menu__current {
     color: var(--button-text-color);
@@ -196,6 +203,11 @@ header {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--second-text-color);
+    transition: color var(--transition-link-time) var(--transition-cubic);
+    &:hover,
+    &:focus {
+      color: var(--button-text-color);
+    }
   }
   .mobile-social__list {
     display: flex;

@@ -1,7 +1,9 @@
 .offer {
   background: #fff;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 }
 
 .filter {
@@ -107,5 +109,9 @@
 @media screen and (min-width: 1200px) {
   .section-chard__item {
     width: calc(100% / 3 - 30px);
+  }
+  .offer {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
