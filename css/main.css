@@ -743,6 +743,7 @@ header {
   .header-contact {
     flex-wrap: wrap;
     align-content: center;
+    margin-left: 50px;
   }
 }
 
