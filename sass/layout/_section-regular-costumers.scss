@@ -9,7 +9,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-bottom: -30px;
+  margin-top: -30px;
 }
 
 .regular-costumer__item {
@@ -17,13 +17,7 @@
   height: 92px;
   flex-basis: calc(100% / 2 - 30px);
   margin-left: 30px;
-  margin-bottom: 30px;
-  // &:nth-last-child(2n) {
-  //   margin-right: 30px;
-  // }
-  // &:nth-last-child(n + 3) {
-  //   margin-bottom: 30px;
-  // }
+  margin-top: 30px;
 }
 
 .regular-costumer__icon {

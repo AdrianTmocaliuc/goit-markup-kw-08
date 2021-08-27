@@ -48,10 +48,10 @@
   .description__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    margin-left: -30px;
     li {
       flex-basis: calc(100% / 2 - 30px);
-      margin-right: 30px;
+      margin-left: 30px;
     }
     h3 {
       text-align: left;
@@ -62,11 +62,10 @@
 @media screen and (min-width: 1200px) {
   .description__list {
     flex-wrap: initial;
-    li {
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
+    // li {
+    //   &:not(:last-child) {
+    //     margin-right: 30px;
+    //   }
   }
   .description {
     padding-top: 94px;
