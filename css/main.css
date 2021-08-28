@@ -188,7 +188,6 @@ img {
     flex-direction: column;
     height: 100%;
     position: relative;
-    background-color: antiquewhite;
     padding: 48px 15px 48px 40px;
     justify-content: space-between;
   }
@@ -367,7 +366,7 @@ img {
   content: "";
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 1px solid #212121;
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
@@ -375,11 +374,6 @@ img {
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
   background-image: url(../images/icons/icon-check.svg);
-  border: none;
-}
-
-.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
-  outline: 2px solid #2196f3;
   border: none;
 }
 
@@ -411,7 +405,7 @@ img {
   align-items: center;
   width: 30px;
   height: 30px;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   border-radius: 50%;
   right: 8px;
@@ -734,7 +728,7 @@ header {
 .header-contact .link {
   color: var(--second-text-color);
   font-family: var(--main-font-style);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
 }
@@ -745,6 +739,12 @@ header {
 
 .header-contact .link:hover .header-contact-icon, .header-contact .link:focus .header-contact-icon {
   fill: var(--button-text-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .header-contact .link {
+    font-size: 12px;
+  }
 }
 
 .header-contact__icon {
@@ -1031,7 +1031,7 @@ header {
 .section-chard {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
+  margin-bottom: -30px;
 }
 
 .section-chard p {
@@ -1041,7 +1041,8 @@ header {
 
 .section-chard__item {
   width: 100%;
-  margin-top: 30px;
+  height: 100%;
+  margin-bottom: 30px;
 }
 
 .section-chard__title {
@@ -1050,6 +1051,7 @@ header {
   font-size: 18px;
   line-height: 2;
   margin-bottom: 4px;
+  letter-spacing: 0.06em;
 }
 
 .section-chard__link {
@@ -1062,14 +1064,16 @@ header {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.section-chard__offer-content {
+.section-chard__content {
+  flex-grow: 1;
   padding: 20px 24px;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  height: 100%;
 }
 
 .section-list__img-wrapped {
+  flex-shrink: 0;
   position: relative;
   overflow: hidden;
 }
@@ -1104,10 +1108,10 @@ header {
     margin-bottom: 0;
   }
   .section-chard {
-    margin-right: -30px;
+    margin-left: -30px;
   }
   .section-chard__item {
-    margin-right: 30px;
+    margin-left: 30px;
     width: calc(100% / 2 - 30px);
   }
 }
